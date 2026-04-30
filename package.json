@@ -1,0 +1,9 @@
+{
+  "name": "malaysia-techlympics-2026-login",
+  "version": "0.1.0",
+  "private": true,
+  "description": "React and Tailwind CSS frontend prototype for the Malaysia Techlympics 2026 login page.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

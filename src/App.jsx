@@ -1,4 +1,4 @@
-const { useMemo, useState } = React;
+import { useMemo, useState } from "react";
 
 const roles = ["Student", "Teacher", "Judge", "Admin"];
 
@@ -238,7 +238,7 @@ function Stat({ value, label }) {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <main className="min-h-screen overflow-hidden bg-[linear-gradient(135deg,#07182f_0%,#0c2545_45%,#087f7c_135%)]">
       <div className="pointer-events-none fixed inset-0 opacity-60">
@@ -256,5 +256,3 @@ function App() {
     </main>
   );
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);

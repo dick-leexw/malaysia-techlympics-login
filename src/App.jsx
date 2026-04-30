@@ -176,10 +176,7 @@ function MiniNote({ title, body }) {
 
 function VisualPanel() {
   return (
-    <section
-      className="relative min-h-[560px] overflow-hidden rounded-lg border border-white/15 bg-cover bg-center p-6 shadow-glow lg:p-8"
-      style={{ backgroundImage: "url('/key-visual.jpg')" }}
-    >
+   <section className="relative min-h-[560px] overflow-hidden rounded-lg border border-white/15 bg-white/10 p-6 shadow-glow backdrop-blur lg:p-8">
     <div className="absolute inset-0 bg-navy/80"></div>
       <div className="absolute right-0 top-14 h-px w-3/4 bg-gradient-to-l from-teal/70 to-transparent"></div>
       <div className="absolute bottom-20 left-0 h-px w-2/3 bg-gradient-to-r from-gold/70 to-transparent"></div>
@@ -243,7 +240,11 @@ function Stat({ value, label }) {
 
 export default function App() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[linear-gradient(135deg,#07182f_0%,#0c2545_45%,#087f7c_135%)]">
+    <main
+  className="relative min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/key-visual.jpg')" }}
+>
+      <div className="absolute inset-0 bg-navy/75"></div>
       <div className="pointer-events-none fixed inset-0 opacity-60">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[length:64px_64px]"></div>
         <div className="absolute left-0 top-24 h-px w-1/2 bg-gradient-to-r from-teal/50 to-transparent"></div>
